@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /home/ubuntu/
+cd /opt/codedeploy-agent/deployment-root/*/*/deployment-archive/
 mvn clean install
-cp /home/ubuntu/target/*.war  /home/ubuntu/apache-tomcat-9.0.65/webapps/
+cp /opt/codedeploy-agent/deployment-root/*/*/deployment-archive/target/*.war  /home/ubuntu/apache-tomcat-9.0.65/webapps/
