@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /*
+    destination: /home/ubuntu/
+hooks:
+  BeforeInstall:
+    - location: /install_dependencies.sh
+      timeout: 300
+      runas: root
+    - location: /build.sh
+      timeout: 300
+      runas: root
+    - location: /start.sh
+      timeout: 300
+      runas: root
